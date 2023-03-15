@@ -7,14 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #wapper {
+        #wrapper {
             display: flex;
             flex-direction: column;
+            width: 1440px;
         }
         
         #menu {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-around; 
+            height: 110px;
+            padding-top: 13px;
         }
         
         #menu_left {
@@ -33,25 +36,70 @@
             width: 20%;
         }
         
-        #line1 {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
+        #title {
+            height: 127px;
         }
-        
-        #line2 {
-            display: flex;
+
+        #filter {
+            width: 85%;
+        }
+        #line1 {         
             justify-content: space-around;
             align-items: center;
+            border: 1px solid #CAC9C6; 
+            border-width: 1px;
+            border-style: solid ;
+            height: 304px;
+            position: relative;
+            left: 131px;
+            width: 1180px;
+            border-radius: 10px;
+        }
+        #button {
+            background-color: #459D7A;
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+            color: white;
+            border: #459D7A;
+            border-radius: 5px;
+        }
+        #line2 {
+            justify-content: space-around;
+            border: 1px solid #CAC9C6; 
+            border-width: 1px;
+            border-style: solid ;
+            height: 288px;
+            position: relative;
+            left: 131px;
+            width: 1180px;
+            border-radius: 10px;
         }
         
         #line3 {
-            display: flex;
             justify-content: space-around;
-            align-items: center;
-            width: 100%;
+            border: 1px solid #CAC9C6; 
+            border-width: 1px;
+            border-style: solid ;
+            height: 368px;
+            position: relative;
+            left: 131px;
+            width: 1177px;
+            border-radius: 10px;
+        }
+        #line {
+            justify-content: space-around;
+            border: 1px solid #1D2128; 
+            background-color: #1D2128;
+            border-width: 1px;
+            border-style: solid ;
+            height: 435px;
+            position: relative;
+            left: 8px;
+            width: 1440px;
         }
     </style>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 
 <body>
@@ -67,10 +115,13 @@
                 <img src="Image 1.png" alt="">
             </div>
             <div id="menu_right">
-                <div>
-                    <input type="text">
+                <div style="width: 200px; height: 35px;">
+                    <input type="text" style="width: 170px; height: 35px; border-radius: 10px; position: relative;padding-left: 30px;" placeholder="Search product..." >
+                    <i class="fa-sharp fa-solid fa-magnifying-glass" style="position: absolute;top: 33px; padding-left: 10px;"></i>
                 </div>
-                <div>cart (0)</div>
+                <div>
+                    <img src="Button 1.png" alt="">
+                </div>
                 <div>
                     <img src="Avatar 1.png" alt="">
                 </div>
@@ -78,38 +129,95 @@
         </div>
         <div id="title">
             <center>
-                <h1>Promotionss</h1>
+                <h style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 65px;">Promotions</h>
             </center>
         </div>
         <div id="filter">
             <div id="line1">
-                <div>
-                    <img src="Image 1 (1).png" alt="">
+                <div style="display: flex;align-items: center;">
+                    <div><img src="Image 1 (1).png" alt="" style="height: 304px;"></div>
+                    <div style="padding-left: 70px;align-items: ;">
+                        <h style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 25px;">Promotion title</h> <br> <br>
+                        <p" style="font-size: 20px;">Et ipsum irure amet cupidatat mollit exercitation <br>
+                            consequat duis aliquip. Reprehenderit Lorem <br>
+                            veniam pariatur esse pariatur in aute tempor au
+                        </p>
+                        <p><i style="font-size: 20px;">*Velit deserunt elit proident velit anim Ggdipisicing</i></p>
+                        <button id="button">shop now</button>
+                    </div>
                 </div>
-                <div>
-                    <h2>Promotions title</h2>
-                    <button>Shop now</button>
-                </div>
-            </div>
+            </div><br><br><br>
             <div id="line2">
-                <div>
-                    <h2>Promotions title</h2>
-                    <button>Shop now</button>
+                <div style="display: flex; align-items: center;">
+                    <div style="padding-left: 70px;">
+                        <h style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 25px;">Promotion title</h> <br> <br>
+                        <p" style="font-size: 20px;">Et ipsum irure amet cupidatat mollit exercitation <br>
+                            consequat duis aliquip. Reprehenderit Lorem <br>
+                            veniam pariatur esse pariatur in aute tempor au
+                        </p>
+                        <p><i style="font-size: 20px;">*Velit deserunt elit proident velit anim Ggdipisicing</i></p>
+                        <button id="button">shop now</button>
+                    </div>
+                    <div><img src="Image 1 (2).png" alt="" style="padding-left: 149px;"></div>
                 </div>
-                <div>
-                    <img src="Image 1 (2).png" alt="">
+            </div><br><br><br>
+            <div id="line3">
+                <div style="display: flex;">
+                    <div><img src="Image 1 (3).png" alt="" style="position: absolute;">
+                    <div style="position: relative; padding-left: 634px; padding-top: 96px;">
+                            <h style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 50px;">Gift for your skin</h> <br> <br>
+                            <p" style="font-size: 20px;">Enim officia magna ut esse aliquip irure <br>
+                            Consectetur dolor dolor commodo et. Cupid
+                            </p>
+                            <button id="button">shop now</button>
+                    </div>
+                </div>
                 </div>
             </div>
-            <div id="line3">
+        </div><br><br><br> <br>
+        <div id="line">
+            <div style="width: 70%; padding-top: 80px; padding-left: 95px; display: flex; justify-content: space-around;color: white;">
                 <div>
-                    <img src="Image 1 (3).png" alt="" style="width: 50%;">
+                    <h2>About</h2>
+                    <p>Home</p>
+                    <p>Shop</p>
+                    <p>Our Story</p>
+                    <p>Blog</p>
+                    <select name="NgonNgu" id="" style="width: 128px; height: 36px; background-color: #1D2128; color: white;">
+                        <option value="English">English</option>
+                        <option value="TiengViet">TiengViet</option>
+                    </select>
                 </div>
                 <div>
-                    <button>Shop now</button>
+                    <h2>Help</h2>
+                    <p>Shipping & Returns</p>
+                    <p>Track Order</p>
+                    <p>FAQs</p>
+                </div>
+                <div>
+                    <h2>Contact</h2>
+                    <p>Phone:</p>
+                    <p><b>(+1) 123 456 7893</b></p>
+                    <p>Email:</p>
+                    <p><b>name@email.com</b></p>
+                </div>
+                <div>&emsp14;</div>
+                <div>
+                    <h2>Receive new promotios</h2>
+                    <p>Duis ea tempor commodo amet reprehende</p>
+                    <div style="width: 431px;">
+                        <input type="text" style="width: 428px; height: 53px; border-radius: 10px; position: relative;padding-left: 40px;background-color: #1D2128; color: white;" placeholder="Input your email" >
+                        <i class="fa-solid fa-envelope" style="position: absolute;top: 203px; padding-left: 20px;"></i>
+                        <button id="" style="position: absolute; width: 128px; height: 58px;top: 182px;left: 998px; border-top-right-radius: 10px;border-bottom-right-radius: 10px;background-color: #459D7A;color: white;">Subcribe</button>
+                    </div><br>
+                    <img src="Twitter 1.png" alt="">
+                    <img src="Facebook 1.png" alt="">
+                    <img src="LinkedIn 1.png" alt="">
+                    <img src="YouTube 1.png" alt="">
+                    <p>&emsp;&emsp;&#169; 2020 Branch, Inc. Peivacy . Terms . Sitemap</p>
                 </div>
             </div>
         </div>
-        <div id="line">line</div>
     </div>
 </body>
 
